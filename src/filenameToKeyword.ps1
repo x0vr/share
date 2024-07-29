@@ -16,6 +16,7 @@ $exifToolPath = "C:\Exiftool\exiftool.exe"
 # 1. Install ExifTool:                                                         #
 #   - Download ExifTool from the ExifTool website (https://exiftool.org/)      #
 #   - Extract or install it to a directory, e.g. C:\ExifTool\                  #
+#   - The directory should contain exiftool(-k).exe. Rename it to exiftool.exe #
 #                                                                              #
 # 2. Save the Script:                                                          #
 #   - Copy this PowerShell script to your local harddisk                       #
