@@ -41,8 +41,11 @@ $jpgFiles = Get-ChildItem -Path $folderPath -Include *.jpg,*.jpeg,*.JPG,*.JPEG -
 
 # Loop through each JPG file
 foreach ($file in $jpgFiles) {
+    # Get the filename
+    $fileName = $file.Name
+
     # Set the filename as keyword using ExifTool
-    & "$exifToolPath" $file.FullName -overwrite_original -Keywords+="$file"
+    & "$exifToolPath" $file.FullName -overwrite_original -Keywords+="$fileName"
 
 }
 
